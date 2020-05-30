@@ -138,15 +138,14 @@ header:
   height: 80%
   # Background image of site header.
   bg_image:
-    enable: true
+    enable: false
     # In theme directory (source/images): /images/avatar.png
     # In site directory (source/uploads): /uploads/avatar.png
     # You can also use a link of image.
-    # url: /images/banner-bg.jpg
-    url: /images/banner-longshan.jpg
+    url:
   # Mask effect of the background image.
   mask:
-    enable: true
+    enable: false
     # Opacity of the mask (value: 0 ~ 1)
     opacity: 0.5
   nav:
@@ -159,7 +158,7 @@ header:
     enable: false
     # Icon name in FontAwesome, see: https://fontawesome.com/icons
     name: fas fa-angle-down
-    animation: false
+    animation: true
 
 # The body of site.
 body:
@@ -287,7 +286,7 @@ author:
     # In theme directory (source/images): /images/avatar.png
     # In site directory (source/uploads): /uploads/avatar.png
     # You can also use a link of image.
-    url: /images/avatar.png
+    url: /images/icons/stun-logo.svg
     # If true, the avatar would be displayed in a circle.
     rounded: false
     # Opacity of avatar (value: 0 ~ 1)
@@ -296,7 +295,7 @@ author:
     # Optional value: turn | shake
     animation: turn
   # Your favorite motto.
-  motto: 'Less is More'
+  motto: hello world
 
 # Social links
 # Value before `||` is the target link, value after `||` is the name of FontAwesome icon.
@@ -425,7 +424,7 @@ post_list:
     archives: false
   # Whether to show the cover image of post.
   cover_image:
-    home: true
+    home: false
 
 # The widget of post.
 post_widget:
@@ -624,7 +623,7 @@ local_search:
 # Canvas-ribbon
 # Dependency: https://github.com/hustcc/ribbon.js
 canvas_ribbon:
-  enable: true
+  enable: false
   # The width of the ribbon.
   size: 120
   # The transparency of the ribbon.
